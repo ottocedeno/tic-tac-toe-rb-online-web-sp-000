@@ -64,13 +64,16 @@ end
 
 # Keeps track of how many total turns have been played:
 def turn_count(board)
-  turns = 0
-  board.each do | token |
-    if token == "X" || token == "O"
-      turns += 1
-    end
-  end
-  return turns
+  # turns = 0
+  # board.each do | token |
+  #   if token == "X" || token == "O"
+  #     turns += 1
+  #   end
+  # end
+  # return turns
+
+  board.count { |token| (token == "X" || token == "O")}
+
 end
 
 # Tracks who's turn it is:
