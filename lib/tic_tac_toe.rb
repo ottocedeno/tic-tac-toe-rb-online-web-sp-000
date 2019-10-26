@@ -132,5 +132,9 @@ def play(board)
   if !over?(board)
     turn(board)
     play(board)
+  else
+    if won?(board)
+      puts "# Congratulations player {board[won?board[0]]}!"
+    end
   end
 end
