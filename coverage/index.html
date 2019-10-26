@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-10-26T13:01:20+00:00">2019-10-26T13:01:20+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-10-26T13:08:26+00:00">2019-10-26T13:08:26+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,7 +25,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         18.8
+         19.3
        </span>
     </span> hits/line)
   </h2>
@@ -57,7 +57,7 @@
         <td>64</td>
         <td>62</td>
         <td>2</td>
-        <td>18.8</td>
+        <td>19.3</td>
       </tr>
       
     </tbody>
@@ -435,7 +435,7 @@
         <li class="covered" data-hits="2" data-linenumber="58">
           <span class="hits">2</span>
           
-          <code class="ruby">    move(board, index, player = &quot;X&quot;)</code>
+          <code class="ruby">    move(board, index, current_player(board))</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="59">
@@ -486,20 +486,20 @@
           <code class="ruby">def turn_count(board)</code>
         </li>
       
-        <li class="covered" data-hits="19" data-linenumber="67">
-          <span class="hits">19</span>
+        <li class="covered" data-hits="21" data-linenumber="67">
+          <span class="hits">21</span>
           
           <code class="ruby">  turns = 0</code>
         </li>
       
-        <li class="covered" data-hits="19" data-linenumber="68">
-          <span class="hits">19</span>
+        <li class="covered" data-hits="21" data-linenumber="68">
+          <span class="hits">21</span>
           
           <code class="ruby">  board.each do | token |</code>
         </li>
       
-        <li class="covered" data-hits="171" data-linenumber="69">
-          <span class="hits">171</span>
+        <li class="covered" data-hits="189" data-linenumber="69">
+          <span class="hits">189</span>
           
           <code class="ruby">    if token == &quot;X&quot; || token == &quot;O&quot;</code>
         </li>
@@ -522,8 +522,8 @@
           <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="19" data-linenumber="73">
-          <span class="hits">19</span>
+        <li class="covered" data-hits="21" data-linenumber="73">
+          <span class="hits">21</span>
           
           <code class="ruby">  return turns</code>
         </li>
@@ -552,14 +552,14 @@
           <code class="ruby">def current_player(board)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="78">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="3" data-linenumber="78">
+          <span class="hits">3</span>
           
           <code class="ruby">  if turn_count(board) % 2 == 0</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="79">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="3" data-linenumber="79">
+          <span class="hits">3</span>
           
           <code class="ruby">    return &quot;X&quot;</code>
         </li>
