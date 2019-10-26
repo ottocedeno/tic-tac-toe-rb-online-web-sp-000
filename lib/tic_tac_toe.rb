@@ -122,6 +122,7 @@ def winner(board)
   nil
 end
 
+# Main method in charge of running game play:
 def play(board)
   if !over?(board)
     turn(board)
