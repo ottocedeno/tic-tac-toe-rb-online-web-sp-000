@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-10-26T13:14:53+00:00">2019-10-26T13:14:53+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-10-26T13:16:28+00:00">2019-10-26T13:16:28+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,7 +25,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         41.6
+         41.0
        </span>
     </span> hits/line)
   </h2>
@@ -57,7 +57,7 @@
         <td>66</td>
         <td>66</td>
         <td>0</td>
-        <td>41.6</td>
+        <td>41.0</td>
       </tr>
       
     </tbody>
@@ -612,14 +612,14 @@
           <code class="ruby">  WIN_COMBINATIONS.each do | win_combo |</code>
         </li>
       
-        <li class="covered" data-hits="1233" data-linenumber="88">
-          <span class="hits">1233</span>
+        <li class="covered" data-hits="1180" data-linenumber="88">
+          <span class="hits">1180</span>
           
           <code class="ruby">    if win_combo.all? { |index| board[index] == &quot;X&quot;} || win_combo.all? { |index| board[index] == &quot;O&quot;}</code>
         </li>
       
-        <li class="covered" data-hits="13" data-linenumber="89">
-          <span class="hits">13</span>
+        <li class="covered" data-hits="17" data-linenumber="89">
+          <span class="hits">17</span>
           
           <code class="ruby">      return win_combo</code>
         </li>
@@ -636,8 +636,8 @@
           <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="33" data-linenumber="92">
-          <span class="hits">33</span>
+        <li class="covered" data-hits="29" data-linenumber="92">
+          <span class="hits">29</span>
           
           <code class="ruby">  false</code>
         </li>
@@ -828,20 +828,20 @@
           <code class="ruby">def winner(board)</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="124">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="7" data-linenumber="124">
+          <span class="hits">7</span>
           
           <code class="ruby">  winner = won?(board) #loads winning array into variable &#39;winner&#39;</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="125">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="7" data-linenumber="125">
+          <span class="hits">7</span>
           
           <code class="ruby">  if winner</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="126">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="6" data-linenumber="126">
+          <span class="hits">6</span>
           
           <code class="ruby">    return board[winner[0]]</code>
         </li>
@@ -909,7 +909,7 @@
         <li class="covered" data-hits="5" data-linenumber="137">
           <span class="hits">5</span>
           
-          <code class="ruby">      puts &quot;Congratulations player #{board[won?board[0]]}!&quot;</code>
+          <code class="ruby">      puts &quot;Congratulations player #{winner(board)}!&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="138">
